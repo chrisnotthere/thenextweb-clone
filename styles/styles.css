@@ -25,20 +25,33 @@ header {
 .main-content {
     /* background: lemonchiffon; */
     height: 630px;
-
     display: grid;
     grid-template-columns: repeat (4, 1fr );
     grid-template-rows: 1.2fr 0.3fr 1fr;
     grid-template-areas: 
-        'a1 a1 a2 a3'
+        'a1 a1 a3 a4'
         'a1 a1 a5 a5'
-        'a4 a4 a5 a5'
+        'a2 a2 a5 a5'
     ;
+}
+
+.main-content article {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* align-items: center; */
+}
+
+.main-content h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
 }
 
 .a1 {
     grid-area: a1;
-    background: url(/images/section1a.jpeg);
+    background: url(/images/a1.jpeg);
     background-size: cover;
     /* background-size: contain; */
     /* background-size: 100% 100%; */
@@ -46,27 +59,29 @@ header {
 
 .a2 {
     grid-area: a2;
-    background: url(/images/section1b.jpeg);
+    background: url(/images/a2.png);
     background-size: cover;
+    justify-content: center!important;
+    align-items: center;
 }
 
 .a3 {
     grid-area: a3;
-    background: url(/images/section1c.jpeg);
+    background: url(/images/a3.jpeg);
     background-size: cover;
 
 }
 
 .a4 {
     grid-area: a4;
-    background: url(/images/section1d.png);
+    background: url(/images/a4.jpeg);
     background-size: cover;
 
 }
 
 .a5 {
     grid-area: a5;
-    background: url(/images/section1e.jpeg);
+    background: url(/images/a5.jpeg);
     background-size: cover;
 
 }
@@ -105,8 +120,14 @@ header {
 }
 
 .latest-grid article {
-    width: 150px;
+    /* width: 150px; */
     height: 150px;
+}
+
+.latest-grid figure {
+    /* width: 150px; */
+    /* height: 250px; */
+    background: chocolate;
 }
 
 .latest-grid {
@@ -119,51 +140,76 @@ header {
     ;
 }
 
-.b1 {
+.b1a {
+    background: url(/images/b1.jpeg);
+    background-size: cover;
+}
+
+.b1f {
     grid-area: b1;
-    background: url(/images/section2a.jpeg);
+}
+
+.b2a {
+    background: url(/images/b2.jpeg);
     background-size: cover;
 }
 
-.b2 {
+.b2f {
     grid-area: b2;
-    background: url(/images/section2b.jpeg);
+}
+
+.b3a {
+    background: url(/images/b3.jpeg);
     background-size: cover;
 }
 
-.b3 {
+.b3f {
     grid-area: b3;
-    background: url(/images/section2c.jpeg);
+}
+
+.b4a {
+    background: url(/images/b4.jpeg);
     background-size: cover;
 }
 
-.b4 {
+.b4f {
     grid-area: b4;
-    background: url(/images/section2c.webp);
+}
+
+.b5a {
+    background: url(/images/b5.jpeg);
     background-size: cover;
 }
 
-.b5 {
+.b5f {
     grid-area: b5;
-    background: url(/images/section2e.jpeg);
+}
+
+.b6a {
+    background: url(/images/b6.jpeg);
     background-size: cover;
 }
 
-.b6 {
+.b6f {
     grid-area: b6;
-    background: url(/images/section2f.jpeg);
+}
+
+.b7a {
+    background: url(/images/b7.jpeg);
     background-size: cover;
 }
 
-.b7 {
+.b7f {
     grid-area: b7;
-    background: url(/images/section2g.jpeg);
-    background-size: cover;}
+}
 
-.b8 {
-    grid-area: b8;
-    background: url(/images/section2h.jpeg);
+.b8a {
+    background: url(/images/b8.jpeg);
     background-size: cover;
+}
+
+.b8f {
+    grid-area: b8;
 }
 
 
