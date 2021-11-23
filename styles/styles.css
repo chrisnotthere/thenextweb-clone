@@ -1,5 +1,5 @@
 :root {
-    --off-white: rgb(243, 243, 243);
+  --off-white: rgb(243, 243, 243);
 }
 
 main,
@@ -9,7 +9,7 @@ main,
 }
 
 body {
-    background: var(--off-white);
+  background: var(--off-white);
 }
 
 /* header */
@@ -24,37 +24,38 @@ header {
   height: 3em;
 }
 
-.header-logo, .header-logo svg {
-    height: 20px;
-    width: 75px;
+.header-logo,
+.header-logo svg {
+  height: 20px;
+  width: 75px;
 }
 
 .header-nav ul {
-    display: flex;
-    font-family: sans-serif;
+  display: flex;
+  font-family: sans-serif;
 }
 
 .header-nav li {
-    background: var(--off-white);
-    height: 3em;
-    padding: 0 1em;
-    display: flex;
-    align-items: center;
+  background: var(--off-white);
+  height: 3em;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
 }
 
 .header-nav li:first-child {
-    background: white;
+  background: white;
 }
 
 .arrow-li {
-    display: flex;
+  display: flex;
 }
 
-.arrow-li img{
-    width: 15px;
-    margin-left: 0.25em;
-    /* top: -0.25em; */
-    /* transform: translate(15px 55px); */
+.arrow-li img {
+  width: 15px;
+  margin-left: 0.25em;
+  /* top: -0.25em; */
+  /* transform: translate(15px 55px); */
 }
 
 /* content */
@@ -71,15 +72,15 @@ header {
 }
 
 .main-header svg {
-    /* width: 300px; */
-    /* height: 300px; */
-    background-size: 200px 300px;
+  /* width: 300px; */
+  /* height: 300px; */
+  background-size: 200px 300px;
 }
 
 .main-header h5 {
-    font-size: 3rem;
-    font-family: sans-serif;
-    color: gray;
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: gray;
 }
 
 .main-content {
@@ -110,7 +111,12 @@ header {
 
 .a1 {
   grid-area: a1;
-  background: url(/images/a1.jpeg);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url(/images/a1.jpeg);
   background-size: cover;
   /* background-size: contain; */
   /* background-size: 100% 100%; */
@@ -118,7 +124,12 @@ header {
 
 .a2 {
   grid-area: a2;
-  background: url(/images/a2.png);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url(/images/a2.png);
   background-size: cover;
   justify-content: center !important;
   align-items: center;
@@ -126,19 +137,34 @@ header {
 
 .a3 {
   grid-area: a3;
-  background: url(/images/a3.jpeg);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url(/images/a3.jpeg);
   background-size: cover;
 }
 
 .a4 {
   grid-area: a4;
-  background: url(/images/a4.jpeg);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url(/images/a4.jpeg);
   background-size: cover;
 }
 
 .a5 {
   grid-area: a5;
-  background: url(/images/a5.jpeg);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url(/images/a5.jpeg);
   background-size: cover;
 }
 
@@ -302,7 +328,7 @@ footer {
   }
 
   .header-nav {
-      display: none;
+    display: none;
   }
 
   .main-content {
@@ -353,7 +379,6 @@ footer {
     background-color: lightcyan;
   }
 
-
   .main-content {
     grid-template-columns: 1fr;
     grid-template-rows: 1.4fr 0.6fr;
@@ -362,22 +387,20 @@ footer {
       "a2";
   }
 
-  .a3{
-    display: none!important;
+  .a3 {
+    display: none !important;
   }
 
-  .a4{
-    display: none!important;
+  .a4 {
+    display: none !important;
   }
 
   .a5 {
-    display: none!important;
+    display: none !important;
   }
 
   .latest-grid {
     display: flex;
     flex-direction: column;
-
   }
-
 }
