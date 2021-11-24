@@ -170,7 +170,7 @@ header {
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 1)
     ),
-    url(/images/a1.jpeg);
+    url(/thenextweb-clone/images/a1.jpeg);
   background-size: cover;
 }
 
@@ -181,7 +181,7 @@ header {
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 1)
     ),
-    url(/images/a2.png);
+    url(/thenextweb-clone/images/a2.png);
   background-size: cover;
   justify-content: center !important;
   align-items: center;
@@ -194,7 +194,7 @@ header {
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 1)
     ),
-    url(/images/a3.jpeg);
+    url(/thenextweb-clone/images/a3.jpeg);
   background-size: cover;
 }
 
@@ -205,7 +205,7 @@ header {
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 1)
     ),
-    url(/images/a4.jpeg);
+    url(/thenextweb-clone/images/a4.jpeg);
   background-size: cover;
 }
 
@@ -216,7 +216,7 @@ header {
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 1)
     ),
-    url(/images/a5.jpeg);
+    url(/thenextweb-clone/images/a5.jpeg);
   background-size: cover;
 }
 
@@ -327,7 +327,7 @@ header {
 }
 
 .b1a {
-  background: url(/images/b1.jpeg);
+  background: url(/thenextweb-clone/images/b1.jpeg);
   background-size: cover;
 }
 
@@ -336,7 +336,7 @@ header {
 }
 
 .b2a {
-  background: url(/images/b2.jpeg);
+  background: url(/thenextweb-clone/images/b2.jpeg);
   background-size: cover;
 }
 
@@ -345,7 +345,7 @@ header {
 }
 
 .b3a {
-  background: url(/images/b3.jpeg);
+  background: url(/thenextweb-clone/images/b3.jpeg);
   background-size: cover;
 }
 
@@ -354,7 +354,7 @@ header {
 }
 
 .b4a {
-  background: url(/images/b4.jpeg);
+  background: url(/thenextweb-clone/images/b4.jpeg);
   background-size: cover;
 }
 
@@ -363,7 +363,7 @@ header {
 }
 
 .b5a {
-  background: url(/images/b5.jpeg);
+  background: url(/thenextweb-clone/images/b5.jpeg);
   background-size: cover;
 }
 
@@ -372,7 +372,7 @@ header {
 }
 
 .b6a {
-  background: url(/images/b6.jpeg);
+  background: url(/thenextweb-clone/images/b6.jpeg);
   background-size: cover;
 }
 
@@ -381,7 +381,7 @@ header {
 }
 
 .b7a {
-  background: url(/images/b7.jpeg);
+  background: url(/thenextweb-clone/images/b7.jpeg);
   background-size: cover;
 }
 
@@ -390,7 +390,7 @@ header {
 }
 
 .b8a {
-  background: url(/images/b8.jpeg);
+  background: url(/thenextweb-clone/images/b8.jpeg);
   background-size: cover;
 }
 
