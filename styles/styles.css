@@ -17,6 +17,7 @@ body {
 header {
   background: var(--off-white);
   position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -364,6 +365,15 @@ footer {
   .popular,
   .latest {
     margin: 0 2em;
+  }
+
+  .main-header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-header h5 {
+    font-size: 1.3rem;
   }
 
   .header-nav {
