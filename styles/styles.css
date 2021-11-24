@@ -5,7 +5,7 @@
 main,
 .popular,
 .latest {
-  margin: 0 2em;
+  margin: 0 10em;
 }
 
 body {
@@ -78,21 +78,23 @@ header {
 }
 
 .main-header h5 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: sans-serif;
   color: gray;
 }
 
 .main-content {
   /* background: lemonchiffon; */
-  height: 630px;
+  height: 720px;
   display: grid;
-  grid-template-columns: repeat (4, 1fr);
-  grid-template-rows: 1.2fr 0.3fr 1fr;
+  gap: 0.5em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.3fr 0.5fr 1.1fr;
   grid-template-areas:
     "a1 a1 a3 a4"
     "a1 a1 a5 a5"
     "a2 a2 a5 a5";
+    font-family: sans-serif;
 }
 
 .main-content article {
@@ -101,12 +103,34 @@ header {
   flex-direction: column;
   justify-content: end;
   /* align-items: center; */
+  padding: 1.5em;
 }
 
 .main-content h2 {
   color: white;
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 800; 
+  line-height: 1.2;
+  margin-top: 0.25em;
+}
+
+.big-font {
+  font-size: 2.5rem!important;
+}
+
+.main-content span {
+  color: white;
+  text-transform: uppercase;
+}
+
+.main-content button {
+  background: none;
+  color: white;
+  border: 1pt solid white;
+  border-radius: 2em;
+  padding: 1em;
+  margin-top: 1em;
+  font-size: 1rem;
 }
 
 .a1 {
@@ -320,25 +344,55 @@ footer {
   text-align: center;
 }
 
-/* media queries - max-1080 */
+/* media queries */
+
+@media screen and (max-width: 1900px) {
+  main,
+  .popular,
+  .latest {
+    margin: 0 3em;
+  }
+
+}
 
 @media screen and (max-width: 1024px) {
   body {
     background-color: lightgreen;
   }
 
+  main,
+  .popular,
+  .latest {
+    margin: 0 2em;
+  }
+
   .header-nav {
     display: none;
   }
 
+  .a2 button {
+    padding: 0.5em;
+    margin-top: 0.25em;
+    font-size: 1rem;
+  }
+
+  .a2 h2{
+    font-size: 1.15rem;
+  }
+
   .main-content {
+    height: 850px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1.5fr 1.5fr minmax(0, 1.5fr) minmax(0, 1.5fr);
     grid-template-areas:
       "a1 a1"
       "a1 a1"
       "a3 a2"
       "a4 a5";
+  }
+
+  .normal-font {
+    font-size: 1.5rem!important;
   }
 
   .popular-content {
@@ -377,6 +431,12 @@ footer {
 @media screen and (max-width: 768px) {
   body {
     background-color: lightcyan;
+  }
+
+  main,
+  .popular,
+  .latest {
+    margin: 0 0.25em;
   }
 
   .main-content {
