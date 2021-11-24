@@ -2,6 +2,8 @@
   --off-white: rgb(243, 243, 243);
   --purple: #c09;
   --light-purple: rgb(214, 104, 187);
+  --blue: #0cc;
+
 }
 
 main,
@@ -272,6 +274,7 @@ header {
   /* background: yellow; */
   font-family: "Poppins", sans-serif;
   padding: 0 8em;
+  margin-bottom: 12em!important;
 }
 
 .latest-header {
@@ -399,20 +402,72 @@ header {
 /* footer */
 
 footer {
-  background: rgb(175, 175, 175);
+  background: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer-top {
   display: flex;
   justify-content: space-around;
+  padding: 2em 0;
+  /* margin: 0 -3em; */
+  border-bottom: 2px solid gray;
 }
 
 .footer-left {
   grid-area: footer-left;
+  /* color: white; */
+}
+
+.footer-left h5 {
+  font-size: 1.75rem;
+  /* font-weight: 700; */
+}
+
+.socials {
+  display: flex;
+  gap: 1em;
+  margin-top: 2em;
+  /* margin: 1em 0; */
+}
+
+.socials svg {
+  cursor: pointer;
+}
+
+.socials svg:hover {
+  fill: white!important;
 }
 
 .footer-mid {
   grid-area: footer-mid;
+}
+
+.footer-mid span,.footer-right span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.1rem;
+}
+
+.footer-top ul {
+  color: var(--blue);
+  line-height: 1.75rem;
+  margin-top: 0.5em;
+}
+
+.footer-top ul li{
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.footer-top ul li:hover{
+  text-decoration: underline;
+}
+
+.footer-top svg {
+  /* color: white; */
 }
 
 .footer-right {
@@ -423,7 +478,20 @@ footer {
   padding: 4em;
   border-top: 2px solid black;
   text-align: center;
+  color: gray;
+  line-height: 1.5rem;
 }
+
+.footer-bottom span{
+  color: white!important;
+  cursor: pointer;
+}
+
+.footer-bottom span:hover{
+  color: var(--purple)!important;
+}
+
+
 
 /* media queries */
 
@@ -511,6 +579,10 @@ footer {
       "b7 b8";
   }
 
+  .footer {
+
+  }
+
   .footer-top {
     display: grid;
     grid-template-columns: repeat (2, 1fr);
@@ -518,11 +590,24 @@ footer {
     grid-template-areas:
       "footer-left footer-left"
       "footer-mid footer-right";
+      /* margin-bottom: 8em; */
+
+      /* background: blue; */
   }
 
   .footer-left {
-    height: 150px;
+    /* height: 150px; */
+    margin-bottom: 4em;
   }
+
+  /* .footer-top ul {
+    color: var(--purple)!important;
+  } */
+
+
+
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -589,4 +674,9 @@ footer {
     text-align: center;
     font-size: 2rem;
   }
+
+
+  
+
+
 }
