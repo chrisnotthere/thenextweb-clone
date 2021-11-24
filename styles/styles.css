@@ -23,12 +23,21 @@ header {
   align-items: center;
   padding: 0 2em;
   height: 3em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .header-logo,
 .header-logo svg {
   height: 20px;
   width: 75px;
+  cursor: pointer;
+}
+
+.header-logo svg:hover {
+  filter: invert(48%) sepia(79%) saturate(276%) hue-rotate(275deg) brightness(95%) contrast(99%);
+}
+
+.filter-green{
 }
 
 .header-nav ul {
@@ -42,10 +51,19 @@ header {
   padding: 0 1em;
   display: flex;
   align-items: center;
+  text-transform: uppercase;
+  color: gray;
+  cursor: pointer;
+}
+
+.header-nav li:hover {
+  background: white;
+  color: black;
 }
 
 .header-nav li:first-child {
   background: white;
+  color: black;
 }
 
 .arrow-li {
@@ -57,6 +75,15 @@ header {
   margin-left: 0.25em;
   /* top: -0.25em; */
   /* transform: translate(15px 55px); */
+}
+
+.header-right {
+  cursor: pointer;
+  /* color: black; */
+}
+
+.header-right i:hover{
+  color: black!important;
 }
 
 /* content */
